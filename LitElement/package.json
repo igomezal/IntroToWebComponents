@@ -1,0 +1,15 @@
+{
+  "name": "litelement",
+  "version": "1.0.0",
+  "description": "Example about the use of LitElement",
+  "license": "ISC",
+  "scripts": {
+    "start": "es-dev-server --app-index index.html --node-resolve --watch --open"
+  },
+  "dependencies": {
+    "lit-element": "^2.4.0"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.57.6"
+  }
+}

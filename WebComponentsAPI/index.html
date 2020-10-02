@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Intro to Web Components API</title>
+
+    <style>
+        .my-class {
+            background: blue;
+            color: white;
+            min-height: 70px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <template id="my-custom-element">
+        <style>
+            .my-class {
+                background: black;
+                color: white;
+                min-height: 70px;
+                border-radius: 10px;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
+        <p class="my-class">This is my web component using template</p>
+    </template>
+    
+    <my-custom-element-without-template></my-custom-element-without-template>
+    <script src="./1-custom-elements-without-template.js"></script>
+
+    <!-- <my-custom-element-with-template></my-custom-element-with-template>
+    <script src="./2-custom-elements-with-template.js"></script> -->
+
+    <!-- Define the element and add the slot you want to use, if there is no name then the default slot is used -->
+    <!-- <my-custom-element-with-slots>
+        <p class="my-class" slot="my-slot-name">This is my web component and I am using slots</p>
+        <details>
+            <summary>Details</summary>
+            I am using the default slot 😊.
+        </details>
+    </my-custom-element-with-slots>
+    <script src="./3-custom-elements-with-slots.js"></script> -->
+</body>
+</html>
