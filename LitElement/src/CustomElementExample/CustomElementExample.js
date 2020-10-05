@@ -1,0 +1,1 @@
+// We should see how to launch events, bind events, attributes, boolean attributes, values or just text.
