@@ -31,16 +31,32 @@
         </style>
         <p class="my-class">This is my web component using template</p>
     </template>
+
+    <template id="my-custom-element-with-slots">
+        <style>
+            .my-class {
+                background: black;
+                color: white;
+                min-height: 70px;
+                border-radius: 10px;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
+        <p class="my-class">This is part of the component, and bellow we are using a slot where you can add any element from outside</p>
+        <slot name="my-slot-name"></slot>
+        <!-- <slot></slot> -->
+    </template>
     
     <my-custom-element-without-template></my-custom-element-without-template>
     <script src="./1-custom-elements-without-template.js"></script>
 
-    <!-- <my-custom-element-with-template></my-custom-element-with-template>
-    <script src="./2-custom-elements-with-template.js"></script> -->
+    <!-- <my-custom-element-with-template></my-custom-element-with-template> -->
+    <!-- <script src="./2-custom-elements-with-template.js"></script> -->
 
     <!-- Define the element and add the slot you want to use, if there is no name then the default slot is used -->
     <!-- <my-custom-element-with-slots>
-        <p class="my-class" slot="my-slot-name">This is my web component and I am using slots</p>
+        <p class="my-class" slot="my-slot-name">Right now I am using the slot called my-slot-name</p>
         <details>
             <summary>Details</summary>
             I am using the default slot 😊.
